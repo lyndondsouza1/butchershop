@@ -1,0 +1,159 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+* {
+  box-sizing: border-box;
+}
+.nav {
+	margin: 10;
+	padding: 10px;
+	background-color: aquamarine;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	display: inline-flex;
+}
+.container {
+	padding: 14px 8px;
+	text-align: center;
+}
+
+.h1 {
+	width: 100px;
+}
+
+.links {
+	list-style-type: none;
+	overflow: hidden;
+	width: 100%;
+}
+.link {
+	float: right;
+}
+.nav li {
+	padding: 14px 16px;
+	text-align: center;
+	text-decoration: none;
+}
+
+/* ////////////////home///////////////// */
+
+#home {
+	margin-top: 10rem;
+	background-color: grey;
+	width: auto;
+	background-image: url("/images/meritt-thomas--A_U5GZlLlQ-unsplash.jpg");
+	height: 500px;
+	background-position: center;
+	position: relative;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.offer {
+	width: auto;
+	background-color: black;
+	opacity: 0.6;
+	color: white;
+	position: absolute;
+	bottom: 0;
+}
+
+#features .row {
+    
+
+}
+
+#features .row:after{
+content: "";
+  display: table;
+  clear: both;
+}
+
+#features .column {
+	float:left;
+	width: 33%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	transition: 0.3s;
+    padding: 0 10px;
+}
+
+#features .column:hover {
+	box-shadow: 0 8px 16px 9 rgba(0, 0, 0, 0.2);
+}
+#features .card {
+    padding: 2px 16px;
+    background-color: wheat;
+}
+#features img {
+width: 100%;
+}
+.card {
+    text-align: center;
+}
+button{
+    background-color: brown;
+    text-align: center;
+    margin: 15px;
+    padding: 15 15px;
+    color: aliceblue;
+    border-radius: 15px ;
+    border: none;
+
+}
+
+@media screen and (max-width:600px) {
+    #features .column {
+        width:100%;
+        display:block;
+        margin-bottom: 20px;
+    }
+}
+
+
+/* ////////////////////////how it works ////////////////////////// */
+
+
+.howlinks {
+	width: 100%;
+	display: inline-flex;
+	list-style-type: none;
+	flex-direction: column;
+}
+
+.howlink {
+	display: flex;
+	transition: 0.3s;
+    padding: 0 10px;
+	float: left;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+.card3{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+	height: 10rem;
+	margin-right: -50px;
+overflow: visible;
+z-index: 1;
+background-color: wheat
+}
+
+.img3{
+margin: 20px;
+width:600px;
+padding-right: -20px;
+}
+.img3 img{
+	margin-left: ;
+	width: 100%;}
+
+/* ///////////////////explore//////////////////////// */
+
+
+.container4 img {
+	width: 100%;
+}
+
