@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+		/>
+	</head>
+	<style>
+		.nav {
+		}
+
+		.container {
+			background-color: white;
+		}
+		.container a {
+			padding: 10px 16px;
+			margin: 5px;
+            text-decoration: none;
+            font-size: large;
+		}
+
+		.links {
+			float: right;
+			display: block;
+		}
+		.links a {
+			padding: 10px 10px;
+			margin: 5px;
+		}
+		.icon {
+			padding: 10px 16px;
+			display: none;
+		}
+		@media screen and (max-width: 600px) {
+			.links {
+				display: none;
+			}
+
+			.icon {
+				display:inline;
+			}
+            .links.responsive {
+                position: relative;
+                display: block;
+				float: none;
+            }
+			.links.responsive a {
+				float: none;
+				display: block;
+				text-align: center;
+                background-color: grey;
+			}
+            .links.responsive a:hover {
+                background-color: green;
+            }
+		}
+	</style>
+	<body>
+		<div class="nav" id="topNav">
+			<div class="container">
+				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+					<i class="fa fa-bars"></i>
+				</a>
+				<a href="#">Home</a>
+				<div class="links" id="links1">
+					<a href="#">contacts</a>
+					<a href="#">features</a>
+					<a href="#">careers</a>
+				</div>
+			</div>
+		</div>
+		<script>
+			function myFunction() {
+				var x = document.getElementById("links1")
+				if (x.className === "links") {
+					x.className += " responsive";
+				} else {
+					x.className = "links";
+				}
+			}
+		</script>
+	</body>
+</html>

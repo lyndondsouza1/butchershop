@@ -20,21 +20,25 @@
 			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
 		/>
 		<link rel="stylesheet" href="style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<section id="nav">
-			<div class="topNav">
-			<div class="nav">
-				<h1><a href="#home"> SimpleCSStest</a></h1>
-				<a href="javascript:void(0);" class="icon" onclick="myFunction()">
-					<i class="fa fa-bars"></i>
-				</a>
-			</div>
-			<div class="links" id="myLinks">
-				<a href="#features">Features</a>
-				<a href="#works">How it works</a>
-				<a href="#explore">Explore</a>
-			</div>
+			<div class="nav" id="topNav">
+				<div class="navcontainer">
+					<a href="javascript:void(0);" class="navicon" onclick="myFunction()">
+						<i class="fa fa-bars"></i>
+					</a>
+					<a href="#home" id="brand">ButcherShop</a>
+					<div class="navlinks" id="navlinks1">
+						<a href="#features">Features</a>
+						<a href="#works">How it Works</a>
+						<a href="#explore">Explore</a>
+					</div>
+				</div>
 			</div>
 		</section>
 
@@ -52,7 +56,7 @@
 		</section>
 
 		<section id="features">
-			<div class="container" id="features">
+			<div class="fcontainer" id="features">
 				<h2>What we deliver</h2>
 				<p>
 					When you join us, you’re joining a community focused on caring about
@@ -101,7 +105,6 @@
 			<div class="container3" id="works">
 				<h1>HOW IT WORKS</h1>
 				<p>We make it easy to feed your family the best.</p>
-				<div class="howdiv">
 					<ul class="howlinks">
 						<li class="howlink">
 							<div class="card3">
@@ -152,31 +155,30 @@
 									High-quality meat delivered to your door means more time for
 									amazing meals together
 								</p>
-								<a href="#">Choose your plan </a>
 							</div>
 						</li>
 					</ul>
-				</div>
 			</div>
 		</section>
 		<section id="explore">
 			<div class="container4">
-				<h2>explore the possibilities</h2>
+				<h2>Explore the possibilities</h2>
 				<img
 					src="images/christian-alder-XQsCSjqMjqE-unsplash.jpg"
 					alt=""
 					srcset=""
 				/>
+					<button class="plan">CHOOSE YOUR PLAN</button>
 			</div>
-			<button>CHOOSE YOUR PLAN</button>
+		
 		</section>
 
 		<section id="reviews">
-			<div class="container">
+			<div class="rcontainer">
 				<h3>people love #butcherbox</h3>
 
 				<div class="slideshow-container">
-					<div class="mySlides fade">
+					<div class="mySlides">
 						<h3>soysaucefoodie!</h3>
 						<img src="images/21420064.jpg" alt="review" />
 						<p>
@@ -194,7 +196,7 @@
 					</div>
 					<div class="mySlides">
 						<h3>abby.does.ketore</h3>
-						<img src="images/5623204.jpg" alt="review" />
+						<img src="images/21420064.jpg" alt="review" />
 						<p>
 							High-quality meat delivered to your door means more time for
 							amazing meals together
@@ -202,7 +204,7 @@
 					</div>
 					<div class="mySlides">
 						<h3>soysaucefoodie!</h3>
-						<img src="images/5623204.jpg" alt="review" />
+						<img src="images/25146962.jpg" alt="review" />
 						<p>
 							High-quality meat delivered to your door means more time for
 							amazing meals together
