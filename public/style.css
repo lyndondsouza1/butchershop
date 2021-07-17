@@ -30,7 +30,6 @@ body {
 	text-decoration: none;
 	font-size: large;
 	font-family: "Berkshire Swash", cursive;
-	text-shadow: 2px 2px orange;
 }
 
 .navlinks {
@@ -225,7 +224,7 @@ button {
 	padding: 2 20px;
 	align-items: center;
 	text-align: center;
-	width:350px;
+	width: 350px;
 }
 .slideshow-container .clearfix::after {
 	content: "";
@@ -333,12 +332,38 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+	body {
+		font-size: 20px;
+	}
+	.navcontainer a {
+		padding: 10px 16px;
+		margin: 5px;
+		text-decoration: none;
+		font-size: large;
+		font-family: "Berkshire Swash", cursive;
+	}
+
+	.navicon {
+		padding: 10px 16px;
+		display: inline;
+	}
+	#brand {
+		font-size: xx-large;
+		font-weight: 200;
+		text-shadow: 2px 2px orange;
+		padding-left: 5px;
+	}
+
 	.navlinks {
 		display: none;
 	}
 
-	.navicon {
-		display: inline;
+	.navicon:hover {
+		text-shadow: 2px 2px orange;
+	}
+
+	.navicon.active {
+		text-shadow: 2px 2px orange;
 	}
 	.navlinks.responsive {
 		position: relative;
@@ -348,9 +373,10 @@ button {
 		transition: 0.5s;
 		overflow-x: hidden;
 	}
-	.navlinks.responsive a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
+	.navlinks.responsive a:hover,
+	.overlay a:focus {
+		color: #f1f1f1;
+	}
 	.navlinks.responsive a {
 		float: none;
 		display: block;
@@ -393,10 +419,9 @@ button {
 	#features img {
 		width: 100%;
 	}
-.howdiv{
+	.howdiv {
 		margin: 0;
-
-}
+	}
 	.howlinks {
 		float: none;
 		list-style-type: none;
@@ -453,5 +478,38 @@ margin: 5px 5px;
 		text-align: right;
 		margin: 0;
 
+	}
+}
+	.rcontainer {
+		align-items: center;
+		text-align: center;
+		background-color: white;
+		border-radius: 10px;
+		min-width: 100%;
+	}
+
+	#reviews .img:after {
+		content: "";
+		clear: both;
+		display: table;
+	}
+	.mySlides {
+		margin-bottom: 10px;
+	}
+
+	.mySlides img {
+		width: 100%;
+	}
+
+	.slideshow-container {
+		padding: 2 20px;
+		align-items: center;
+		text-align: center;
+		width: 100%;
+	}
+	.rcontainer .slideshow-container::after {
+		content: "";
+		clear: both;
+		display: table;
 	}
 }
