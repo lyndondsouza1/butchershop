@@ -332,6 +332,7 @@ button {
 }
 
 @media screen and (max-width: 600px) {
+
 	body {
 		font-size: 20px;
 	}
@@ -348,10 +349,11 @@ button {
 		display: inline;
 	}
 	#brand {
-		font-size: xx-large;
+		font-size: 30px;
 		font-weight: 200;
 		text-shadow: 2px 2px orange;
-		padding-left: 5px;
+		padding-left: 15px;
+		margin-left: 20px;
 	}
 
 	.navlinks {
