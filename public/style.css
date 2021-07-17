@@ -398,6 +398,7 @@ button {
 
 }
 	.howlinks {
+		display:flex;
 		float: none;
 		list-style-type: none;
 padding: 2px 16px;
@@ -408,7 +409,12 @@ margin: 5px 5px;
 		display: table;
 		clear: both;
 	}
-	.howlink .card3:after {
+	.howlink .card3::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+		.howlink .card4::after {
 		content: "";
 		display: table;
 		clear: both;
@@ -451,7 +457,8 @@ margin: 5px 5px;
 		min-width: 100%;
 		width: auto;
 		text-align: right;
-		margin: 0;
+		margin: 5px;
+		padding: 2px 16px;
 
 	}
 }
