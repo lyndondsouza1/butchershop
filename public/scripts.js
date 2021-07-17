@@ -16,10 +16,10 @@ function showSlides() {
 }
 
 function myFunction() {
-	var x = document.getElementById("myLinks");
-	if (x.className === "links") {
-		x.className += "responsive1";
+	var x = document.getElementById("navlinks1");
+	if (x.className === "navlinks") {
+		x.className += " responsive";
 	} else {
-		x.className = "links";
+		x.className = "navlinks";
 	}
 }
